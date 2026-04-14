@@ -1,0 +1,41 @@
+p {
+    color: green;
+    font-weight: bold;
+}
+
+p strong {
+    font-weight: normal;
+}
+
+
+h1 {
+    color: blue
+}
+
+li {
+    color: brown;
+    font-size: larger;
+    background-color: rgb(244, 214, 192);
+    padding: 2%;
+    margin: 2%;
+}
+
+html {
+    font-family: cursive;
+    background-color: rgb(244, 239, 224);
+}
+
+
+
+.highlight_01 {
+    background-color: pink;
+}
+
+.highlight_02 {
+    background-color: rgb(197, 231, 255);
+}
+
+
+#pinksmall {
+    width:40px;
+}
