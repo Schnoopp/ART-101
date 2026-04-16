@@ -1,0 +1,35 @@
+h1,
+h2,
+h3 {
+    color: darkolivegreen;
+    font-family: sans-serif;
+}
+
+
+
+html {
+
+    background-color: #cdd1bf;
+}
+
+button{
+    background-color: #cdd1bf;
+    color:darkolivegreen;
+    border: 0;
+    padding: 2%;
+}
+
+
+.test-div {
+    background-color: rgba(111, 141, 124, 0.744);
+    padding: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.my-flex{
+    display: flex;
+   
+}
+
