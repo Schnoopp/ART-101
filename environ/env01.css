@@ -1,0 +1,18 @@
+body {
+  background-image: url(alexandra-ovod-frog-queen.jpg);
+}
+
+p{
+    color: aliceblue;
+
+    font-size: xx-large;
+}
+
+img{
+    width: 75ch;
+    margin-left: 25ch ;
+}
+
+.textdiv{
+    padding:10cqh;
+}
