@@ -19,7 +19,7 @@ html {
 }
 
 
-
+/* classes*/
 .top-section {
     display: flex;
     gap: 30px;
@@ -27,13 +27,6 @@ html {
     margin: 0 0 25px 0;
 }
 
-
-#page {
-    max-width: 900px;
-    margin: 0 auto 0 auto;
-    background-color: #cdd1bf;
-    padding: 30px;
-}
 
 .profile {
     text-align: center;
@@ -51,6 +44,16 @@ html {
 .profile p {
     font-size: 90%;
     
+}
+
+
+/* IDs*/
+
+#page {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background-color: #cdd1bf;
+    padding: 30px;
 }
 
 
@@ -75,11 +78,6 @@ html {
     font-size: 120%;
     line-height: 1.5;
 }
-
-
-
-
-
 
 
 

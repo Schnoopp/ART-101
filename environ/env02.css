@@ -1,58 +1,62 @@
 body {
-  background-image: url(alexandra-ovod-frog-queen.jpg);
+    background-image: url(alexandra-ovod-frog-queen.jpg);
 }
 
-p{
+p {
     color: aliceblue;
 
     font-size: xx-large;
 }
 
-#frog{
+#frog {
     width: 75ch;
-    margin-left: 25ch ;
+    margin-left: 25ch;
 }
 
-#meowl{
+#meowl {
     width: 400px;
     ;
 }
 
 
-#bug{
-width: 200px;
+#bug {
+    width: 200px;
 
 }
-.textdiv{
+
+.textdiv {
+
+
+    padding: 10px;
     text-align: center;
     flex: 1;
-    background: rgba(9, 9, 5,0.8);
-    border-color: wheat;
-    border: 3px,solid,rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(255, 255, 255,0.75);
+
+    background: rgba(0, 0, 0,0.75);
     border-radius: 12px;
-    padding: 10pxpx;
 }
 
 
-.topzone{
+
+.topzone {
     display: flex;
     gap: 75px;
     align-items: flex-end;
-    justify-content:center;
-    
+    justify-content: center;
+
     margin: 0 0 25px 0;
 
 }
 
-.mainzone{
+.mainzone {
     display: flex;
     gap: 30px;
     align-items: flex-end;
-    justify-content:center;
-    
+    justify-content: center;
+
     margin: 0 0 25px 0;
 }
 
-.characters{
+.characters {
     align-items: flex-end;
 }
