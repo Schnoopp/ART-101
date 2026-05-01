@@ -10,11 +10,23 @@ let mood = 0
 
 $("#needy-button").click(function () {
 
+    //Increase count and check if color is not greater than array
     count = count + 1
 
     if (colorCount >= colors.length - 1) {
         colorCount = 0
     }
+    /*
+        if (colors[colorCount] == "Orange") {
+            $("#needy-button").after(" notPink ");
+        }
+        else if (colors[colorCount] == "Orchid") {
+            $("#needy-button").after("  hey Orchid ");
+        }
+        else {
+            $("#needy-button").after(" all other colors ");
+        }
+    */
 
     //mood
     if (count < 5) {
@@ -26,9 +38,15 @@ $("#needy-button").click(function () {
     else if (count == 10) {
         mood = 3;
     }
-    else if(count == 15) {
+    else if (count == 15) {
         mood = 4;
     }
+
+    //orchid image
+    if (colors[colorCount] == "Orchid") {
+        $("body").append("<img width = 50 src = 'orchid.jpg'>");
+    }
+
 
     //button change
     $("#needy-button").html("I've been clicked " + count + " times! " + colors[colorCount] + "..." + moodlist[mood])
@@ -37,6 +55,8 @@ $("#needy-button").click(function () {
 
     $("body").css("background-color", bgcolors[colorCount]);
 
+
+
     //color count increase
     colorCount = colorCount + 1
 
@@ -44,8 +64,7 @@ $("#needy-button").click(function () {
 
 
 
-
-
+    //IGNORE
     /*
  
      $("#needy-button").html("I've been clicked " + count + " times! ")
@@ -81,7 +100,6 @@ let myCat = {
     ears: 2,
     hasKittens: false,
     purr: function () {
-
         console.log("purrrrr")
     },
     eat_sandwich: function () {
