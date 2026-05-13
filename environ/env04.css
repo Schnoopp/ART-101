@@ -11,12 +11,16 @@ p {
 }
 
 #frog {
-    width: 100%;
+    width: 650px;
+  
+  
 
 }
 
 #meowl {
-    width: 75%;
+    width: 500px;
+   
+
 
 }
 
@@ -36,7 +40,6 @@ p {
     margin: auto;
 
     width: 75%;
-
 
 
 }
@@ -59,21 +62,34 @@ p {
     margin-right: auto;
     height: 50px;
 
+
 }
 
 .characters {
     display: flex;
     flex-direction: column;
     width: 600px;
+    min-height: 200px;
+    height: 500px;
+
+    align-items: center;
 }
 
+.characterIMG{
+margin-top: 200px;
+position: absolute;
+}
+
+
 .textdiv {
-    color:white;
+    color: white;
     padding: 10px;
     text-align: center;
     border: 3px solid rgba(255, 255, 255, 0.75);
     background: rgba(0, 0, 0, 0.75);
     border-radius: 12px;
+
+    margin-bottom: 20px;
 }
 
 
