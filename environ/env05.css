@@ -1,0 +1,133 @@
+body {
+    background-image: url(environImages/alexandra-ovod-frog-queen.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: aliceblue;
+
+    font-size: xx-large;
+}
+
+#frog {
+    width: 650px;
+  
+  
+
+}
+
+#meowl {
+    width: 500px;
+   
+
+
+}
+
+
+#bug {
+    width: 10%;
+
+}
+
+
+.mainparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    width: 75%;
+
+
+}
+
+.dialogueButton {
+    color: white;
+    text-align: center;
+    font-size: large;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+
+
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    min-height: 200px;
+    height: 500px;
+
+    align-items: center;
+}
+
+.characterIMG{
+margin-top: 200px;
+position: absolute;
+}
+
+
+.textdiv {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+
+
+.topzone {
+    display: flex;
+    gap: 75px;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100px;
+
+    margin: 0 0 25px 0;
+
+}
+
+.mainzone {
+    display: flex;
+    gap: 30px;
+
+}
+
+#thought {
+  display: none;
+  position: absolute;
+  left: 40%;
+
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  width: 180px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.transformed {
+
+
+  transform: scale(1.2) rotate(10deg);
+}
