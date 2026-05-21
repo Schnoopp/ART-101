@@ -25,15 +25,28 @@ async function getRandomName() {
 }
 
 
+async function getRandomColor() {
+   // goes and grabs some data from an api
+   const response = await fetch( "https://api.gofakeit.com/funcs/hexcolor", {method: "GET",});
+   // covnverts the response into plain text
+   const colorRandom = await response.text();
+    
+   console.log("Got color:", colorRandom);
+   return colorRandom;
+}
+
+
+
 // creates creautre with random values
 async function randomizeCreature() {
     const eyesRandom = Math.floor(Math.random() * 5) + 1;
     const nameRandom = await getRandomName();
+    const colorRandom = await getRandomColor();
 
     const randomCreature = {
 
         name: nameRandom,
-        color: "randomcolor",
+        color: colorRandom,
         eyes: eyesRandom,
     };
 
@@ -48,18 +61,26 @@ async function isCreatureValid(newCreature) {
 
     if ($("#cr-random").is(':checked')) {
         await randomizeCreature;
-    }
-
-    if (newCreature.name.replace(/^\s+|\s+$/gm, '') == "") {
-        // do nothing
+        if (newCreature.name.replace(/^\s+|\s+$/gm, '') == "") {
+            // do nothing
+        }
+        else {
+            console.log("true")
+            return true;
+        }
     }
     else {
-      
 
+        if (newCreature.name.replace(/^\s+|\s+$/gm, '') == "") {
+            // do nothing
+        }
+        else {
+            console.log("true")
+            return true;
+        }
     }
 
-  console.log("true")
-        return true;
+
 }
 
 // add creature to array, sort alphabetically
@@ -150,8 +171,6 @@ $("#cr-add").click(async function () {
         displayCreatures()
 
     }
-
-
     //clear the text input box for next input
     $("#cr-name").val("");
     $("#cr-color").val("");
