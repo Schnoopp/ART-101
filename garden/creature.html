@@ -12,7 +12,7 @@
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Link to external JavaScript file -->
-    <script src="creature.js" DEFER></script>
+    <script src="creature copy.js" DEFER></script>
 
 </head>
 
@@ -27,7 +27,12 @@
         <div>Name: <input type="text" id="cr-name"></div>
         <div>Color: <input type="color" id="cr-color"></div>
         <div>Number of eyes: <input type="number" id="cr-eyes"></div>
+        <div> <input type="checkbox" id="cr-random">randomize!</div>
         <div> <button id="cr-add"> add creature! </button></div>
+    </div>
+    <div id="sortbuttons">
+        <div> <button id="cr-nameSort"> sort creatures by name</button></div>
+        <div> <button id="cr-eyeSort"> sort creatures by number of eyes</button></div>
     </div>
     <!-- show critters -->
     <div id="creature-list">

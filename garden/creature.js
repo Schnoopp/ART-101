@@ -15,7 +15,7 @@ $("#cr-add").click(function () {
 
     //check if input has text without white space, then sort critters
     if (crName.replace(/^\s+|\s+$/gm, '') == "") {
-
+        // do nothing
     }
     else {
         //function to sort the creatures and display them in the garden
@@ -49,7 +49,7 @@ function sortCreatures(name, color, eyes) {
 
     //for each member in the creature array, append each name to the garden
     for (let i = 0; i < creatureArray.length; i++) {
-        console.log(creatureArray[i].creatureName)
+        console.log(creatureArray[i].name)
 
         //display creature: set box color based on input and display eyes. set name below
         $("#creature-list").append(`
@@ -61,7 +61,5 @@ function sortCreatures(name, color, eyes) {
         `);
 
     }
-
-
 
 }
