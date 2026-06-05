@@ -1,0 +1,16 @@
+body {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background: #929a87;
+    padding: 50px;
+}
+.content_box {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    border-top: 6px solid darkolivegreen;
+    border-left: 6px solid darkolivegreen;
+    background: #fffde1;
+    border-radius: 12px;
+}

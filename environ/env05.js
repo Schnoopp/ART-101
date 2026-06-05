@@ -23,7 +23,6 @@ let meowl = {
 }
 
 
-
 //frog buttons
 $("#frogName").click(function () {
 
@@ -75,8 +74,7 @@ $("#meowlHi").click(function () {
 });
 
 
-
-
+//bug buttons
 $("#bugs").click(function () {
     console.log("clicked")
     askBugs();
@@ -106,23 +104,16 @@ function askBugs() {
             $("#frogDialogue").html("");
         }
 
-
         for (let i = 0; i < bugNum; i++) { $(".topzone").append(bugimg) }
-
-
-
-
 
     }
     else if (userBug == 'butterfly') {
         let bugNum = prompt("how many bugs are there? type in an integer")
 
-
         bugimg = '<img id="bug" src="environImages/tumblr_mnmxj7MS4s1rni86yo1_500.gif">'
         console.log(userBug)
         console.log(bugimg)
         console.log(bugNum)
-
 
         if (bugNum == 1) {
             $("#meowlDialogue").html("<p>Butterflies are pretty, but still a little scary</p>");
@@ -148,8 +139,6 @@ function askBugs() {
         console.log(userBug)
         console.log(bugimg)
 
-
-
         $("#meowlDialogue").html("<p>Where'd they go?</p>");
         $("#frogDialogue").html("<p>Hmm i don't see any bugs</p>");
 
@@ -161,6 +150,8 @@ function askBugs() {
     }
 }
 
+
+// meowl poking
 
 let meowlpoked = false;
 let meowlrotation = 0
@@ -178,13 +169,10 @@ $("#meowl").hover(
             $("#thought").html("that's not very nice!");
             $(this).toggleClass("transformed");
             meowlpoked = false
-
         }
         else{
             $("#thought").stop(true, true).slideUp(300);
         }
-        
-        
     }
 );
 
@@ -203,10 +191,4 @@ $("#meowl").click(function () {
 
     )
 
-});
-
-
-$("#creature").click(function () {
-    $(this).toggleClass("transformed");
-    $("#status").text("The creature changed shape.");
 });
